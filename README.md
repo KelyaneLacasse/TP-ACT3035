@@ -4,7 +4,13 @@ nom-du-projet/
 ├── README.md                 # Description du projet (ce fichier)
 │
 ├── data/
-│   ├── raw/                  # Données brutes (non modifiées)
+    getwd()
+    setwd("C:/Users/marco/OneDrive/Bureau/travaux université/Trimestre 3/ACT3035")
+    # lien pour trouver les données https://www.kaggle.com/datasets/mirichoi0218/insurance
+
+    assurance <- read.csv("insurance.csv")
+
+
 │   └── processed/            # Données nettoyées et transformées
 │
 ├── src/
