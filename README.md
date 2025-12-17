@@ -32,6 +32,8 @@ nom-du-projet/
     x <- assurance %>% select(-reclamation)
     y <- assurance$reclamation
 
+    indice_repartition <- sample(1:n, size=floor(.7*n))
+
 
 │
 ├── src/
