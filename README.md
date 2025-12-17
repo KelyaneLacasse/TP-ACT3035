@@ -23,9 +23,16 @@ nom-du-projet/
       region=region,
       reclamation=charges
     )
+    
+    # pré-traitement des données
+    
+    assurance <- assurance %>% 
+      mutate(across(where(is.character), as.factor))
+    
+    x <- assurance %>% select(-reclamation)
+    y <- assurance$reclamation
 
 
-│   └── processed/            # Données nettoyées et transformées
 │
 ├── src/
 │   ├── 01_acquisition.R      # Script d'acquisition des données
