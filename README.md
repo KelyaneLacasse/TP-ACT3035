@@ -39,7 +39,9 @@ nom-du-projet/
     x_test <- x[-indice_repartition,]
     y_train <- y[indice_repartition]
     y_test <- y[-indice_repartition]
-
+    
+    # boite à moustache
+    ggplot(assurance, aes(x=age, y=imc, fill=age)) + geom_boxplot()
 
 │
 ├── src/
