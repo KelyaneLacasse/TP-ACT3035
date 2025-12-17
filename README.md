@@ -7,8 +7,22 @@ nom-du-projet/
     getwd()
     setwd("C:/Users/marco/OneDrive/Bureau/travaux université/Trimestre 3/ACT3035")
     # lien pour trouver les données https://www.kaggle.com/datasets/mirichoi0218/insurance
-
+    
+    install.packages("tidyverse")
+    library(tidyverse)
+    
     assurance <- read.csv("insurance.csv")
+    #changer les noms des colonnes en français
+    assurance <- assurance %>% 
+      rename(
+      age=age,
+      sexe=sex,
+      imc=bmi,
+      enfant=children,
+      fumeur=smoker,
+      region=region,
+      reclamation=charges
+    )
 
 
 │   └── processed/            # Données nettoyées et transformées
