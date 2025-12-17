@@ -35,6 +35,11 @@ nom-du-projet/
     n <- 1338
     indice_repartition <- sample(1:n, size=floor(.7*n))
 
+    x_train <- x[indice_repartition,]
+    x_test <- x[-indice_repartition,]
+    y_train <- y[indice_repartition]
+    y_test <- y[-indice_repartition]
+
 
 │
 ├── src/
