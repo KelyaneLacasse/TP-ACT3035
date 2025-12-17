@@ -44,6 +44,7 @@ nom-du-projet/
     ggplot(assurance, aes(x=fumeur, y=imc, fill=fumeur)) + geom_boxplot()
     ggplot(assurance, aes(x=fumeur, y=reclamation, fill=fumeur)) + geom_boxplot()
     ggplot(assurance, aes(x=region, y=reclamation, fill=region)) + geom_boxplot()
+    ggplot(assurance, aes(x=fumeur, y=age, fill=fumeur)) + geom_boxplot()
 
 │
 ├── src/
