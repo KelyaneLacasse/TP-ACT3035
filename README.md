@@ -41,7 +41,8 @@ nom-du-projet/
     y_test <- y[-indice_repartition]
     
     # boite à moustache
-    ggplot(assurance, aes(x=age, y=imc, fill=age)) + geom_boxplot()
+    ggplot(assurance, aes(x=fumeur, y=imc, fill=fumeur)) + geom_boxplot()
+    ggplot(assurance, aes(x=fumeur, y=reclamation, fill=fumeur)) + geom_boxplot()
 
 │
 ├── src/
