@@ -43,6 +43,7 @@ nom-du-projet/
     # boite à moustache
     ggplot(assurance, aes(x=fumeur, y=imc, fill=fumeur)) + geom_boxplot()
     ggplot(assurance, aes(x=fumeur, y=reclamation, fill=fumeur)) + geom_boxplot()
+    ggplot(assurance, aes(x=region, y=reclamation, fill=region)) + geom_boxplot()
 
 │
 ├── src/
