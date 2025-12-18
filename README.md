@@ -39,7 +39,13 @@ nom-du-projet/
     x_test <- x[-indice_repartition,]
     y_train <- y[indice_repartition]
     y_test <- y[-indice_repartition]
-    
+
+    # statistique descriptive
+    reclamation_max <- assurance[which.max(assurance[,"reclamation"]),]
+    print(reclamation_max)
+    reclamation_min <- assurance[which.min(assurance[,"reclamation"]),]
+    print(reclamation_min)
+
     # boite à moustache
     ggplot(assurance, aes(x=fumeur, y=imc, fill=fumeur)) + geom_boxplot()
     ggplot(assurance, aes(x=fumeur, y=reclamation, fill=fumeur)) + geom_boxplot()
