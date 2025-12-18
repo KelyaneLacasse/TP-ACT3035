@@ -41,6 +41,7 @@ nom-du-projet/
     y_test <- y[-indice_repartition]
 
     # statistique descriptive
+    summary(assurance)
     reclamation_max <- assurance[which.max(assurance[,"reclamation"]),]
     print(reclamation_max)
     reclamation_min <- assurance[which.min(assurance[,"reclamation"]),]
