@@ -177,6 +177,10 @@ nom-du-projet/
     # Valeur non significative selon ce modèle:
     # Le sexe si c'est un homme ou une femme, les régions ne crée pas de différence significative sur le montant des réclamations
 
+    # Modélisation régression linéaire
+    modelisation_lm <- lm(reclamation ~ .,
+                          data = assurance)
+    summary(modelisation_lm)
     
 │
 ├── src/
