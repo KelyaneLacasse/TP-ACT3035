@@ -113,6 +113,9 @@ nom-du-projet/
     # Avec le nuage de points pour déterminer la relation entre l'imc et les réclamations n'est pas concluant.
     # Il semble avoir une légère augmentation entre 30 et 40 de l'imc, mais on ne peut déterminer une réelle
     # relation entre ces deux variables avec ce graphique.
+
+    # L'histogramme à barre permet de démontrer qu'il n'a pas vraiment de relation entre le nombre d'enfant
+    # et le montant des réclamations de l'assuré.
     
 │
 ├── src/
