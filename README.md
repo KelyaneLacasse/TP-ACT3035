@@ -54,6 +54,12 @@ nom-du-projet/
       cor() %>% 
       heatmap(Rowv = NA, Colv = NA)
 
+    # calculer corrélation entre donnée et réclamation
+    r_age <- cor(assurance$reclamation, assurance$age)
+    r_imc <- cor(assurance$reclamation, assurance$imc)
+    r_enfant <- cor(assurance$reclamation, assurance$enfant)
+    #Pas vraiment concluant, mais on peut remarquer que les réclamations ne sont pas corrélées avec le nombre d'enfant
+
     # boite à moustache
     ggplot(assurance, aes(x=fumeur, y=imc, fill=fumeur)) + geom_boxplot()
     ggplot(assurance, aes(x=fumeur, y=reclamation, fill=fumeur)) + geom_boxplot()
