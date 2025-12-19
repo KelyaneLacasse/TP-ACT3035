@@ -129,6 +129,8 @@ nom-du-projet/
     # fasse des réclamations plus élevées. Cela peut aussi s'expliquer logiquemment que plus on vieillit, plus on 
     # peut avoir des problèmes de santé, donc avoir des réclamations plus élevé à l'assurance vie (santé) par les
     # coût des soins médicaux.
+    # Cependant, avec les catégories d'âge créer, on peut mieux remarquer la relation entre l'âge et le montant
+    # des réclamations faits. La catégorie sénior fait en moyenne des plus hautes réclamations que les autres groupes.
 
     # Avec le nuage de points pour déterminer la relation entre l'imc et les réclamations n'est pas concluant.
     # Il semble avoir une légère augmentation entre 30 et 40 de l'imc, mais on ne peut déterminer une réelle
