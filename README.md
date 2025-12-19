@@ -97,11 +97,14 @@ nom-du-projet/
            y="Réclamation moyenne")
 
     # Rajouter catégorie d'âge pour mieux déterminer la relation avec les réclamations
-    categorie_age <- cut(
-      assurance$age,
-      breaks = c(0,25,50,70, Inf),
-      labels=c("Jeunes","Adultes","Seniors","Ainés"),
-      right=FALSE)
+    # Rajouter la catégorie âge dans assurance
+    assurance <- assurance %>% 
+      mutate(
+        categorie_age= cut(
+          age,
+          breaks = c(0,25,50,70, Inf),
+          labels=c("Jeunes","Adultes","Seniors","Ainés"),
+          right=FALSE))
 
     #Discussion:
     
