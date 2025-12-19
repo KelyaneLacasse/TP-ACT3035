@@ -93,6 +93,12 @@ nom-du-projet/
     #les réclamations. Cependant, avec les boîtes à moustache, on peut remarquer qu'il y a une corrélation
     #entre fumeur et les réclamations, ce qui signifie que les risquent que les fumeurs fassent une réclamations
     #plus élevé sont plus élevé que les non fumeurs.
+
+    # Le nuage de point entre l'âge et les réclamations peut permettre de voir qu'il y a une certaine corrélation
+    # positive entre ces deux variables, lorsqu'une personne devient plus âgée, il y a plus de chance qu'elle
+    # fasse des réclamations plus élevées. Cela peut aussi s'expliquer logiquemment que plus on vieillit, plus on 
+    # peut avoir des problèmes de santé, donc avoir des réclamations plus élevé à l'assurance vie (santé) par les
+    #coût des soins médicaux.
     
 │
 ├── src/
