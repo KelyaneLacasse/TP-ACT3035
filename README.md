@@ -106,6 +106,7 @@ nom-du-projet/
           labels=c("Jeunes","Adultes","Seniors","Ainés"),
           right=FALSE))
           
+    #Histogramme relation entre catégorie d'âge et réclamations      
     assurance %>% 
       group_by(categorie_age) %>% 
       summarise(reclamation_moy=mean(reclamation)) %>% 
