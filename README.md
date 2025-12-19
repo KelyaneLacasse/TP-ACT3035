@@ -158,14 +158,14 @@ nom-du-projet/
     # Modélisation avec modèle linéaire généralisé 
     # On prend gaussian et pas binomial car réclamation est une valeur continue (pas entre 0 et 1)
     
-    modelisation_regression_logistique <- glm(reclamation ~ .,
+    modelisation_glm <- glm(reclamation ~ .,
                          data = cbind(x_train,
                                       reclamation=y_train),
                          family = gaussian())
-    summary(modelisation_regression_logistique)
+    summary(modelisation_glm)
     
     #Prédiction des réclamations avec x_test selon modèle linéaire généralisé 
-    y_pred <- predict(modelisation_regression_logistique, newdata = x_test,
+    y_pred <- predict(modelisation_glm, newdata = x_test,
                   type = "response")
     y_pred
     #Il y a des réclamations négatives?
