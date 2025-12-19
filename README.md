@@ -92,6 +92,7 @@ nom-du-projet/
       labs(title="Relation IMC-réclamation (échelle log)",
            x="IMC",
            y="Réclamation")
+    ![image alt](https://github.com/KelyaneLacasse/TP-ACT3035/blob/d150dd3b79670b68060d16e9467d399d32b48d94/Relation%20IMC-r%C3%A9clamation.png)
 
     #histogramme pour déterminer la fréquence des variables
     hist(assurance$reclamation)
