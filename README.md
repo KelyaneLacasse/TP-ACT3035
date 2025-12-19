@@ -105,6 +105,15 @@ nom-du-projet/
           breaks = c(0,25,50,70, Inf),
           labels=c("Jeunes","Adultes","Seniors","Ainés"),
           right=FALSE))
+          
+    assurance %>% 
+      group_by(categorie_age) %>% 
+      summarise(reclamation_moy=mean(reclamation)) %>% 
+      ggplot(aes(x=categorie_age, y = reclamation_moy))+
+      geom_col()+
+      labs(title="Réclamation moyenne selon la catégorie d'âge",
+           x=NULL,
+           y="Réclamation moyenne")
 
     #Discussion:
     
