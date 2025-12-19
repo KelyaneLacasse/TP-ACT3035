@@ -86,6 +86,16 @@ nom-du-projet/
     hist(assurance$age)
     hist(assurance$imc)
 
+    #histogramme à barre des réclamations moyennes selon le nombre d'enfant
+   assurance %>% 
+      group_by(enfant) %>% 
+      summarise(reclamation_moy=mean(reclamation)) %>% 
+      ggplot(aes(x=enfant, y = reclamation_moy))+
+      geom_col()+
+      labs(title="Réclamation moyenne selon le nombre d'enfant",
+           x=NULL,
+           y="Réclamation moyenne")
+
     #Discussion:
     
     #Il y a une limite pour déterminer la corrélation entre les réclamations et les autres varaibles,
