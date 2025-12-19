@@ -53,6 +53,13 @@ nom-du-projet/
     ggplot(assurance, aes(x=region, y=reclamation, fill=region)) + geom_boxplot()
     ggplot(assurance, aes(x=fumeur, y=age, fill=fumeur)) + geom_boxplot()
 
+    #corrélation entre les données
+    assurance %>% 
+      select(where(is.numeric)) %>% 
+      cor() %>% 
+      heatmap(Rowv = NA, Colv = NA)
+      
+
 │
 ├── src/
 │   ├── 01_acquisition.R      # Script d'acquisition des données
