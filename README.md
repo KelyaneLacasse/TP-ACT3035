@@ -181,13 +181,17 @@ nom-du-projet/
     modelisation_lm <- lm(reclamation ~ .,
                           data = assurance)
     summary(modelisation_lm)
+
+    # Valeur significative selon ce modèle:
+    # L'âge, car elle augmente de 242,73$ par an
+    # IMC, car elle augmente de 344,00$ quand elle augmente de 1
+    # Fumeur, augmente de 23 890,81$ s'ils sont fumeurs, donc la variable est la plus significative à comparer des autres
+    # Enfant, augmente de 633,00$ par enfant
+    # De plus les probabilité Pr(>|t|) sont très petites, donc elles ont un effet sur les réclamations faites
     
-│
-├── src/
-│   ├── 01_acquisition.R      # Script d'acquisition des données
-│   ├── 02_nettoyage.R        # Script de nettoyage ETL
-│   ├── 03_exploration.R      # Script d'analyse exploratoire
-│   ├── 04_modelisation.R     # Script de modélisation
+    # Valeur non significative selon ce modèle:
+    # Le sexe et les régions ne crée pas de différence significative sur le montant des réclamations faites à l'assurance vie
+
 │   └── 05_comparaison.R      # Script de comparaison des modèles
 │
 ├── docs/
