@@ -88,11 +88,11 @@ nom-du-projet/
 
     #Discussion:
     
-    Il y a une limite pour déterminer la corrélation entre les réclamations et les autres varaibles,
-    car certaines ne sont pas numérique comme la variable fummeur qui pourrait avoir une corrélation avec 
-    les réclamations. Cependant, avec les boîtes à moustache, on peut remarquer qu'il y a une corrélation
-    entre fumeur et les réclamations, ce qui signifie que les risquent que les fumeurs fassent une réclamations
-    plus élevé sont plus élevé que les non fumeurs.
+    #Il y a une limite pour déterminer la corrélation entre les réclamations et les autres varaibles,
+    #car certaines ne sont pas numérique comme la variable fummeur qui pourrait avoir une corrélation avec 
+    #les réclamations. Cependant, avec les boîtes à moustache, on peut remarquer qu'il y a une corrélation
+    #entre fumeur et les réclamations, ce qui signifie que les risquent que les fumeurs fassent une réclamations
+    #plus élevé sont plus élevé que les non fumeurs.
     
 │
 ├── src/
