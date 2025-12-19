@@ -47,7 +47,7 @@ nom-du-projet/
     reclamation_min <- assurance[which.min(assurance[,"reclamation"]),]
     print(reclamation_min)
 
-    #corrélation entre les données
+    # corrélation entre les variables numériques (âge, imc, réclamation, nombre d'enfants)
     assurance %>% 
       select(where(is.numeric)) %>% 
       cor() %>% 
