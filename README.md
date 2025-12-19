@@ -154,6 +154,15 @@ nom-du-projet/
     # leur assuré. En ajustant mieux leur tarification, ça évite que l'assurance soit en déficit à cause d'un risque pas 
     # bien couvert. Par exemple, on pourrait s'attendre que la tarification soit plus élevé si l'assuré est fumeur et/ou
     # plus âgé et/ou à une plus forte imc.
+
+    # Modélisation avec modèle de régression logistique
+    # On prend gaussian et pas binomial car réclamation est une valeur continue (pas entre 0 et 1)
+    
+    modelisation_regression_logistique <- glm(reclamation ~ .,
+                         data = cbind(x_train,
+                                      reclamation=y_train),
+                         family = gaussian())
+    summary(modelisation_regression_logistique)
 │
 ├── src/
 │   ├── 01_acquisition.R      # Script d'acquisition des données
