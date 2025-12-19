@@ -47,18 +47,28 @@ nom-du-projet/
     reclamation_min <- assurance[which.min(assurance[,"reclamation"]),]
     print(reclamation_min)
 
+    #corrélation entre les données
+    assurance %>% 
+      select(where(is.numeric)) %>% 
+      cor() %>% 
+      heatmap(Rowv = NA, Colv = NA)
+
     # boite à moustache
     ggplot(assurance, aes(x=fumeur, y=imc, fill=fumeur)) + geom_boxplot()
     ggplot(assurance, aes(x=fumeur, y=reclamation, fill=fumeur)) + geom_boxplot()
     ggplot(assurance, aes(x=region, y=reclamation, fill=region)) + geom_boxplot()
     ggplot(assurance, aes(x=fumeur, y=age, fill=fumeur)) + geom_boxplot()
 
-    #corrélation entre les données
+    #Nuage de point pour voir s'il y a une tendance
     assurance %>% 
-      select(where(is.numeric)) %>% 
-      cor() %>% 
-      heatmap(Rowv = NA, Colv = NA)
-      
+      select(reclamation, age) %>% 
+      ggplot(aes(x=age,y=reclamation))+
+      geom_point(alpha=.99)+              
+      geom_smooth(method="loess")+
+      scale_y_log10()+                                      #pour mieux voir
+      labs(title="Relation âge-réclamation (échelle log)",
+           x="Âge",
+           y="Réclamation")
 
 │
 ├── src/
