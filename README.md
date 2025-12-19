@@ -62,7 +62,7 @@ nom-du-projet/
 
     # boite à moustache
     ggplot(assurance, aes(x=fumeur, y=imc, fill=fumeur)) + geom_boxplot()
-    <img width="1320" height="751" alt="image" src="https://github.com/user-attachments/assets/81f6934a-a601-4110-830e-6fcc65ae8f29" />
+    #file:///C:/Users/marco/OneDrive/Bureau/travaux%20universit%C3%A9/Trimestre%203/ACT3035/Boite%20%C3%A0%20moustache%20(fumeur-imc).pdf
 
     ggplot(assurance, aes(x=fumeur, y=reclamation, fill=fumeur)) + geom_boxplot()
     ggplot(assurance, aes(x=region, y=reclamation, fill=region)) + geom_boxplot()
