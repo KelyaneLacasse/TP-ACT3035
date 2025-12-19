@@ -98,7 +98,11 @@ nom-du-projet/
     # positive entre ces deux variables, lorsqu'une personne devient plus âgée, il y a plus de chance qu'elle
     # fasse des réclamations plus élevées. Cela peut aussi s'expliquer logiquemment que plus on vieillit, plus on 
     # peut avoir des problèmes de santé, donc avoir des réclamations plus élevé à l'assurance vie (santé) par les
-    #coût des soins médicaux.
+    # coût des soins médicaux.
+
+    # Avec le nuage de points pour déterminer la relation entre l'imc et les réclamations n'est pas concluant.
+    # Il semble avoir une légère augmentation entre 30 et 40 de l'imc, mais on ne peut déterminer une réelle
+    # relation entre ces deux variables avec ce graphique.
     
 │
 ├── src/
