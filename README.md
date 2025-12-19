@@ -53,7 +53,7 @@ nom-du-projet/
       select(where(is.numeric)) %>% 
       cor() %>% 
       heatmap(Rowv = NA, Colv = NA)
-    ![Image](https://github.com/KelyaneLacasse/TP-ACT3035/blob/8ae02ef3e1b7b5711bc802534e9bbd71a794e483/Corr%C3%A9lation%20entre%20les%20variables%20num%C3%A9riques.png)
+    ![Image alt](https://github.com/KelyaneLacasse/TP-ACT3035/blob/8ae02ef3e1b7b5711bc802534e9bbd71a794e483/Corr%C3%A9lation%20entre%20les%20variables%20num%C3%A9riques.png)
 
     # calculer corrélation entre donnée et réclamation
     r_age <- cor(assurance$reclamation, assurance$age)
