@@ -105,6 +105,7 @@ nom-du-projet/
           breaks = c(0,25,50,70, Inf),
           labels=c("Jeunes","Adultes","Seniors","Ainés"),
           right=FALSE))
+    #Pour ces données, il n'y a pas d'assuré sous la catégorie "Ainés"
           
     #Histogramme relation entre catégorie d'âge et réclamations      
     assurance %>% 
