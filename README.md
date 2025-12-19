@@ -155,7 +155,7 @@ nom-du-projet/
     # bien couvert. Par exemple, on pourrait s'attendre que la tarification soit plus élevé si l'assuré est fumeur et/ou
     # plus âgé et/ou à une plus forte imc.
 
-    # Modélisation avec modèle de régression logistique
+    # Modélisation avec modèle linéaire généralisé 
     # On prend gaussian et pas binomial car réclamation est une valeur continue (pas entre 0 et 1)
     
     modelisation_regression_logistique <- glm(reclamation ~ .,
@@ -164,7 +164,7 @@ nom-du-projet/
                          family = gaussian())
     summary(modelisation_regression_logistique)
     
-    #Prédiction des réclamations avec x_test selon modèle de régression logistique
+    #Prédiction des réclamations avec x_test selon modèle linéaire généralisé 
     y_pred <- predict(modelisation_regression_logistique, newdata = x_test,
                   type = "response")
     y_pred
