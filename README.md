@@ -171,6 +171,7 @@ nom-du-projet/
                          data = cbind(x_train,
                                       reclamation=y_train))
     summary(modelisation_glm)
+    ![image alt](https://github.com/KelyaneLacasse/TP-ACT3035/blob/6aba3b0842bd56300294668180d314d9274cf708/glm.png)
     
     y_pred <- predict(modelisation_glm, newdata = x_test,
                       type = "response")
