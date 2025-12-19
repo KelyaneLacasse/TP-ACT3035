@@ -192,6 +192,7 @@ nom-du-projet/
     modelisation_lm <- lm(reclamation ~ .,
                           data = assurance)
     summary(modelisation_lm)
+    ![image alt](https://github.com/KelyaneLacasse/TP-ACT3035/blob/77d25aa2189c36f5e56e04b90ebf024554523011/lm.png)
 
     # Valeur significative selon ce modèle:
     # L'âge, car elle augmente de 242,73$ par an
