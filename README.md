@@ -4,6 +4,7 @@ nom-du-projet/
 ├── README.md                 # Description du projet (ce fichier)
 │
 ├── data/
+
     getwd()
     setwd("C:/Users/marco/OneDrive/Bureau/travaux université/Trimestre 3/ACT3035")
     # lien pour trouver les données https://www.kaggle.com/datasets/mirichoi0218/insurance
@@ -85,6 +86,14 @@ nom-du-projet/
     hist(assurance$age)
     hist(assurance$imc)
 
+    #Discussion:
+    
+    Il y a une limite pour déterminer la corrélation entre les réclamations et les autres varaibles,
+    car certaines ne sont pas numérique comme la variable fummeur qui pourrait avoir une corrélation avec 
+    les réclamations. Cependant, avec les boîtes à moustache, on peut remarquer qu'il y a une corrélation
+    entre fumeur et les réclamations, ce qui signifie que les risquent que les fumeurs fassent une réclamations
+    plus élevé sont plus élevé que les non fumeurs.
+    
 │
 ├── src/
 │   ├── 01_acquisition.R      # Script d'acquisition des données
