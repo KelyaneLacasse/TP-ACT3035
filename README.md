@@ -82,6 +82,7 @@ nom-du-projet/
       labs(title="Relation âge-réclamation (échelle log)",
            x="Âge",
            y="Réclamation")
+    ![image alt](https://github.com/KelyaneLacasse/TP-ACT3035/blob/4330fe1353fdd1140ceced9fc44387dfd61b3a93/Relation%20%C3%A2ge-r%C3%A9clamation.png)
            
     assurance %>% 
       select(reclamation, imc) %>% 
