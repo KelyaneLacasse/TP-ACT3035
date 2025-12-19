@@ -155,7 +155,7 @@ nom-du-projet/
     # bien couvert. Par exemple, on pourrait s'attendre que la tarification soit plus élevé si l'assuré est fumeur et/ou
     # plus âgé et/ou à une plus forte imc.
 
-    # Modélisation avec modèle de régression logistique
+    # Modélisation avec modèle linéaire généralisé
 
     modelisation_glm <- glm(reclamation ~ .,
                          data = cbind(x_train,
