@@ -163,6 +163,14 @@ nom-du-projet/
                                       reclamation=y_train),
                          family = gaussian())
     summary(modelisation_regression_logistique)
+    
+    #Prédiction des réclamations avec x_test selon modèle de régression logistique
+    y_pred <- predict(modelisation_regression_logistique, newdata = x_test,
+                  type = "response")
+    y_pred
+    #Il y a des réclamations négatives?
+
+    
 │
 ├── src/
 │   ├── 01_acquisition.R      # Script d'acquisition des données
