@@ -69,6 +69,16 @@ nom-du-projet/
       labs(title="Relation âge-réclamation (échelle log)",
            x="Âge",
            y="Réclamation")
+           
+    assurance %>% 
+      select(reclamation, imc) %>% 
+      ggplot(aes(x=imc,y=reclamation))+
+      geom_point(alpha=.99)+              
+      geom_smooth(method="loess")+
+      scale_y_log10()+
+      labs(title="Relation IMC-réclamation (échelle log)",
+           x="IMC",
+           y="Réclamation")
 
 │
 ├── src/
