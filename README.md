@@ -155,18 +155,15 @@ nom-du-projet/
     # bien couvert. Par exemple, on pourrait s'attendre que la tarification soit plus élevé si l'assuré est fumeur et/ou
     # plus âgé et/ou à une plus forte imc.
 
-    # Modélisation avec modèle linéaire généralisé 
-    # On prend gaussian et pas binomial car réclamation est une valeur continue (pas entre 0 et 1)
-    
-    modelisation_glm <- glm(reclamation ~ .,
+    # Modélisation avec modèle de régression logistique
+
+    modelisation_lm <- lm(reclamation ~ .,
                          data = cbind(x_train,
-                                      reclamation=y_train),
-                         family = gaussian())
-    summary(modelisation_glm)
+                                      reclamation=y_train))
+    summary(modelisation_lm)
     
-    #Prédiction des réclamations avec x_test selon modèle linéaire généralisé 
-    y_pred <- predict(modelisation_glm, newdata = x_test,
-                  type = "response")
+    y_pred <- predict(modelisation_lm, newdata = x_test,
+                      type = "response")
     y_pred
     #Il y a des réclamations négatives?
     
