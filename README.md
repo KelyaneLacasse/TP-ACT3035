@@ -87,7 +87,7 @@ nom-du-projet/
     hist(assurance$imc)
 
     #histogramme à barre des réclamations moyennes selon le nombre d'enfant
-   assurance %>% 
+    assurance %>% 
       group_by(enfant) %>% 
       summarise(reclamation_moy=mean(reclamation)) %>% 
       ggplot(aes(x=enfant, y = reclamation_moy))+
