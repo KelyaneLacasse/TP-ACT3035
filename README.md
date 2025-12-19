@@ -139,6 +139,8 @@ nom-du-projet/
 
     # L'histogramme à barre permet de démontrer qu'il n'a pas vraiment de relation entre le nombre d'enfant
     # et le montant des réclamations de l'assuré.
+
+    # Pour la modélisation, il pourrait être intéressant d'analyser les réclamations selon l'âge, être fumeur, l'imc
     
 │
 ├── src/
