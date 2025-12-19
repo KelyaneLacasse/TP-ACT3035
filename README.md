@@ -169,6 +169,16 @@ nom-du-projet/
                   type = "response")
     y_pred
     #Il y a des réclamations négatives?
+    
+    # Valeur significative selon ce modèle:
+    # L'âge, car elle augmente de 267,13$ par an
+    # IMC, car elle augmente de 344,14 quand elle augmente de 1
+    # Fumeur, augmente de 24 162,89$ s'ils sont fumeurs, donc la variable la plus significative
+    # Enfant, augmente de 638,57 par enfant
+    # De plus les probabilité Pr(>|t|) sont très petites, donc significative
+    
+    # Valeur non significative selon ce modèle:
+    # Le sexe si c'est un homme ou une femme, les régions ne crée pas de différence significative sur le montant des réclamations
 
     
 │
