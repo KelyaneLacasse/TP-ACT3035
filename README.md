@@ -140,8 +140,14 @@ nom-du-projet/
     # L'histogramme à barre permet de démontrer qu'il n'a pas vraiment de relation entre le nombre d'enfant
     # et le montant des réclamations de l'assuré.
 
-    # Pour la modélisation, il pourrait être intéressant d'analyser les réclamations selon l'âge, être fumeur, l'imc
-    
+    # Définition du problème actuarielle:
+    # Pour la modélisation, il pourrait être intéressant d'analyser les réclamations selon l'âge, être fumeur, l'imc.
+    # Avec l'analyse des grapiques, histogrammes, on peut s'attendre qu'avec la modélisation, les réclamations
+    # varient selon l'âge, le fait d'être fumeur et probablement l'imc aussi. 
+    # La modélisation sur les réclamations pourra permettre aux assurances de mieux ajuster leur tarification envers 
+    # leur assuré. En ajustant mieux leur tarification, ça évite que l'assurance soit en déficit à cause d'un risque pas 
+    # bien couvert. Par exemple, on pourrait s'attendre que la tarification soit plus élevé si l'assuré est fumeur et/ou
+    # plus âgé et/ou à une plus forte imc.
 │
 ├── src/
 │   ├── 01_acquisition.R      # Script d'acquisition des données
