@@ -80,6 +80,11 @@ nom-du-projet/
            x="IMC",
            y="Réclamation")
 
+    #histogramme pour déterminer la fréquence des variables
+    hist(assurance$reclamation)
+    hist(assurance$age)
+    hist(assurance$imc)
+
 │
 ├── src/
 │   ├── 01_acquisition.R      # Script d'acquisition des données
