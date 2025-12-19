@@ -65,6 +65,8 @@ nom-du-projet/
     ![image alt](https://github.com/KelyaneLacasse/TP-ACT3035/blob/7eeacfc9629452ba66efaa17f04e425c6b2a4773/Boite%20%C3%A0%20moustache%20(fumeur-imc).png)
 
     ggplot(assurance, aes(x=fumeur, y=reclamation, fill=fumeur)) + geom_boxplot()
+    ![image alt](https://github.com/KelyaneLacasse/TP-ACT3035/blob/5a1bd1e56ab03be44dac5fc4720879eec36b031f/Boite%20%C3%A0%20moustache%20(fumeur-r%C3%A9clamation).png)
+    
     ggplot(assurance, aes(x=region, y=reclamation, fill=region)) + geom_boxplot()
     ggplot(assurance, aes(x=fumeur, y=age, fill=fumeur)) + geom_boxplot()
 
