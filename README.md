@@ -121,7 +121,7 @@ Code et analyse:
            x=NULL,
            y="Réclamation moyenne")
 ![image alt](https://github.com/KelyaneLacasse/TP-ACT3035/blob/1a1cfb982683501bbeb09768f36daa9f7ef7378a/R%C3%A9clamation%20moyenne%20selon%20nombre%20d'enfant.png)
-    #on peut remarquer que le groupe senior a des réclamations moyennes beaucoup plus élevées
+   
 
     # Rajouter catégorie d'âge pour mieux déterminer la relation avec les réclamations
     # Rajouter la catégorie âge dans assurance
@@ -144,7 +144,8 @@ Code et analyse:
            x=NULL,
            y="Réclamation moyenne")
 ![image alt](https://github.com/KelyaneLacasse/TP-ACT3035/blob/5e769a8b37c14783a7270c1ca95cb6771c7e5f20/R%C3%A9clamation%20moyenne%20selon%20cat%C3%A9gorie%20d'%C3%A2ge.png)
-
+    #on peut remarquer que le groupe senior a des réclamations moyennes beaucoup plus élevées
+    
     #Discussion:
     
     #Il y a une limite pour déterminer la corrélation entre les réclamations et les autres varaibles,
