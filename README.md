@@ -142,6 +142,7 @@ Code et analyse:
       labs(title="Réclamation moyenne selon la catégorie d'âge",
            x=NULL,
            y="Réclamation moyenne")
+![image alt](https://github.com/KelyaneLacasse/TP-ACT3035/blob/5e769a8b37c14783a7270c1ca95cb6771c7e5f20/R%C3%A9clamation%20moyenne%20selon%20cat%C3%A9gorie%20d'%C3%A2ge.png)
 
     #Discussion:
     
