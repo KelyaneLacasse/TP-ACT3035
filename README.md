@@ -5,17 +5,22 @@ Réclamation sur coûts médicaux à l'assurance vie
 
 ├── README.md                 # Description du projet (ce fichier)
 
-Le projet avec les données trouver sur Kaggle est de pouvoir mieux déterminer une prime par personne selon
-certains aspects sur eux pour permettre à l'assurance de garder une certaine réserve lors de perte (une réclamation
-très élevée). Le projet permet de réduire les imprévus lors de réclation des assurées grâce à des statistiques qui peuvent
-prouver qu'un certain profil est plus à risque à avoir des coûts médicaux plus élevés que d'autres.
+    # Le projet avec les données trouver sur Kaggle est de pouvoir mieux déterminer une prime par personne selon
+    # certains aspects sur eux pour permettre à l'assurance de garder une certaine réserve lors de perte (une réclamation
+    # très élevée). Le projet permet de réduire les imprévus lors de réclation des assurées grâce à des statistiques qui peuvent
+    # prouver qu'un certain profil est plus à risque à avoir des coûts médicaux plus élevés que d'autres.
 
 ├── data/
 
     getwd()
     setwd("C:/Users/marco/OneDrive/Bureau/travaux université/Trimestre 3/ACT3035")
+    
+    # J'ai trouver des données sur Kaggle qui fait référence à l'âge, sexe, imc, fumeur ou non, la région, le nombre d'enfants et le
+    # montant réclamer à une compagnie d'assurance. Le but avec ces données est de trouver le lien du montant réclamer à la compagnie 
+    # d'assurance selon les variables. Cela pourrait permettre de mieux prédire les coûts d'une personne selon certains caractéristique pour 
+    # éviter des pertes dans la compagnie.
     # lien pour trouver les données https://www.kaggle.com/datasets/mirichoi0218/insurance
-    # les données ont été, par la suite, télécharger et importer dans R
+    # Les données ont été, par la suite, télécharger et importer dans R
     
     install.packages("tidyverse")
     library(tidyverse)
