@@ -1,8 +1,15 @@
 # TP-ACT3035
 nom-du-projet/
+
 Réclamation sur coûts médicaux à l'assurance vie
-│
+
 ├── README.md                 # Description du projet (ce fichier)
+
+Le projet avec les données trouver sur Kaggle est de pouvoir mieux déterminer une prime par personne selon
+certains aspects sur eux pour permettre à l'assurance de garder une certaine réserve lors de perte (une réclamation
+très élevée). Le projet permet de réduire les imprévus lors de réclation des assurées grâce à des statistiques qui peuvent
+prouver qu'un certain profil est plus à risque à avoir des coûts médicaux plus élevés que d'autres.
+
 ├── data/
 
     getwd()
