@@ -232,6 +232,9 @@ Réclamation sur coûts médicaux à l'assurance vie
     # élevée à comparer de l'autre. De plus, l'autre modèle (lm) détermine un plus haut risque en coût avec des enfants même si précédemment, on pouvait
     # remarquer qu'avoir des enfants n'était pas nécessairement une variable qui augmentait le coût de réclamation à l'assurance.
     # Selon moi avec les graphiques obtenus, il est plus important de prendre en compte si la personne fumme et son imc que d'avoir des enfants.
+    # Cependant, l'âge aussi est une variable importante sur les réclamations faites à l'assurance vie sur les coûts médicaux et c'est avec le 
+    # modèle de régression linéaire (lm) qui est la plus élevée, mais seulement d'environ 8$ donc par la faible différence celle du glm est aussi bonne.
+
     
 ├── docs/
 │   └── rapport.md           # Rapport final
