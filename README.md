@@ -1,7 +1,5 @@
 # TP-ACT3035
-nom-du-projet/
-
-Réclamation sur coûts médicaux à l'assurance vie
+# Réclamation sur coûts médicaux à l'assurance santé
 
     # Le projet avec les données trouver sur Kaggle est de pouvoir mieux déterminer une prime par personne selon
     # certains aspects sur eux pour permettre à l'assurance de garder une certaine réserve lors de perte (une réclamation
@@ -156,7 +154,7 @@ Code et analyse:
     # Le nuage de point entre l'âge et les réclamations peut permettre de voir qu'il y a une certaine corrélation
     # positive entre ces deux variables, lorsqu'une personne devient plus âgée, il y a plus de chance qu'elle
     # fasse des réclamations plus élevées. Cela peut aussi s'expliquer logiquemment que plus on vieillit, plus on 
-    # peut avoir des problèmes de santé, donc avoir des réclamations plus élevé à l'assurance vie (santé) par les
+    # peut avoir des problèmes de santé, donc avoir des réclamations plus élevé à l'assurance santé par les
     # coût des soins médicaux.
     # Cependant, avec les catégories d'âge créer, on peut mieux remarquer la relation entre l'âge et le montant
     # des réclamations faits. La catégorie sénior fait en moyenne des plus hautes réclamations que les autres groupes.
@@ -214,7 +212,7 @@ Code et analyse:
     # De plus les probabilité Pr(>|t|) sont très petites, donc elles ont un effet sur les réclamations faites
     
     # Valeur non significative selon ce modèle:
-    # Le sexe et les régions ne crée pas de différence significative sur le montant des réclamations faites à l'assurance vie
+    # Le sexe et les régions ne crée pas de différence significative sur le montant des réclamations faites à l'assurance santé.
 
     # Comparaison des 2 modèles:
     # Pour les modèles, les valeurs significatives sont l'âge, être fumeur, l'imc et avoir des enfants.
@@ -225,7 +223,7 @@ Code et analyse:
     # Le risque de réclamations plus élevés avec l'imc et être fumeur est moins coûteuses avec le modèle lm.
     # Le risque de réclamations plus élevés avec l'imc et être fumeur est plus coûteuses avec le modèle glm.
     # Pour ces deux modèles, être fumeur est le risque le plus coûteux au niveau des coûts médicaux.
-    # De plus, selon les graphiques aussi on pouvait déterminer l'impact d'être fumeur et les réclamations faites à l'assurance vie.
+    # De plus, selon les graphiques aussi on pouvait déterminer l'impact d'être fumeur et les réclamations faites à l'assurance santé.
 
     # Selon moi, la meilleure modélisation serait  avec le modèle linéaire généralisé (glm), car le coût d'être fumeur et d'avoir une forte imc est plus 
     # élevée à comparer de l'autre. De plus, l'autre modèle (lm) détermine un plus haut risque en coût avec des enfants même si précédemment, on pouvait
@@ -235,21 +233,15 @@ Code et analyse:
     # modèle de régression linéaire (lm) qui est la plus élevée, mais seulement d'environ 8$ donc par la faible différence celle du glm est aussi bonne.
 
     # Avec le choix de ce modèle, on peut déterminer de combien environ le risque augmente au niveau des coûts pour l'assureur selon certaines données.
-    # Par exemple, si la personne est fumeuse, sa prime d'assurance santé va couter beaucoup plus cher qu'une personne qui ne fumme pas puisque
+    # Par exemple, si la personne est fumeuse, sa prime d'assurance santé va couter beaucoup plus cher qu'une personne qui ne fume pas puisque
     # le risque aux problèmes de santé reliés à être fumeur est très élevés, donc crée des coûts plus importantes.
 
     # Dicussion des limites:
     # Pour pouvoir encore mieux déterminer comment une prime d'assurance santé pourrait couter à une personne, il serait bien d'avoir
-    # d'autres variables dans les calculs comme la tension artérielle, antécédents familiaux sur des problèmes de santé, si la personne
-    # pratique un sport et lequel, car certains sprots (sport extrême) à des plus hauts risques de coûts élevés de frais médicaux.
+    # d'autres variables dans les calculs comme la tension artérielle, les antécédents familiaux sur des problèmes de santé, si la personne
+    # pratique un sport et lequel, car certains sprots (sport extrême) à des plus hauts risques de coûts élevés de frais médicaux et même
+    # savoir si la personne a des problèmes de santé diagnostiqués.
 
     # Tous les graphiques et tableau de résultats sont enregistrés dans la section fichier et ils sont biens identifiés.
     #L'affichage de ceux-ci de fonctionne pas directement dans le readme.md
 
-    
-├── docs/
-│   └── rapport.md           # Rapport final
-│
-└── results/
-    ├── figures/              # Graphiques générés
-    └── tables/               # Tableaux de résultats
