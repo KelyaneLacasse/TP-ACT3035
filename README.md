@@ -221,6 +221,8 @@ Réclamation sur coûts médicaux à l'assurance vie
     # Pour les modèles, les valeurs significatives sont l'âge, être fumeur, l'imc et avoir des enfants.
     # Leurs interceptions (valeurs des variables à 0) sont les deux négatives. Celle de glm à -12 489,43$ et celle de lm à -11 938,50$
     # Les interceptions ne sont pas très réalistes, car c'est un coût négatif.
+    # Le risque de réclamations plus élevés avec l'âge et avoir des enfants est moins coûteuses avec le modèle glm.
+    # Le risque de réclamations plus élevés avec l'âge et avoir des enfants est plus coûteuses avec le modèle lm.
     
 ├── docs/
 │   └── rapport.md           # Rapport final
