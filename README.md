@@ -217,8 +217,11 @@ Réclamation sur coûts médicaux à l'assurance vie
     # Valeur non significative selon ce modèle:
     # Le sexe et les régions ne crée pas de différence significative sur le montant des réclamations faites à l'assurance vie
 
-│   └── 05_comparaison.R      # Script de comparaison des modèles
-│
+    # Comparaison des 2 modèles:
+    # Pour les modèles, les valeurs significatives sont l'âge, être fumeur, l'imc et avoir des enfants.
+    # Leurs interceptions (valeurs des variables à 0) sont les deux négatives. Celle de glm à -12 489,43$ et celle de lm à -11 938,50$
+    # Les interceptions ne sont pas très réalistes, car c'est un coût négatif.
+    
 ├── docs/
 │   └── rapport.md           # Rapport final
 │
