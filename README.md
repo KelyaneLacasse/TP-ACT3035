@@ -3,14 +3,12 @@ nom-du-projet/
 
 Réclamation sur coûts médicaux à l'assurance vie
 
-├── README.md                 # Description du projet (ce fichier)
-
     # Le projet avec les données trouver sur Kaggle est de pouvoir mieux déterminer une prime par personne selon
     # certains aspects sur eux pour permettre à l'assurance de garder une certaine réserve lors de perte (une réclamation
     # très élevée). Le projet permet de réduire les imprévus lors de réclation des assurées grâce à des statistiques qui peuvent
     # prouver qu'un certain profil est plus à risque à avoir des coûts médicaux plus élevés que d'autres.
-
-├── data/
+    
+Code et analyse:
 
     getwd()
     setwd("C:/Users/marco/OneDrive/Bureau/travaux université/Trimestre 3/ACT3035")
@@ -80,6 +78,7 @@ Réclamation sur coûts médicaux à l'assurance vie
 
     ggplot(assurance, aes(x=fumeur, y=reclamation, fill=fumeur)) + geom_boxplot()
     ![image alt](https://github.com/KelyaneLacasse/TP-ACT3035/blob/5a1bd1e56ab03be44dac5fc4720879eec36b031f/Boite%20%C3%A0%20moustache%20(fumeur-r%C3%A9clamation).png)
+    # On peut remarquer que les fumeurs ont une tendance plus élevée à faire des réclamations élevées
     
     ggplot(assurance, aes(x=region, y=reclamation, fill=region)) + geom_boxplot()
     ![image alt](https://github.com/KelyaneLacasse/TP-ACT3035/blob/318a78bed3c6abd186a8486ddfc569e33658c839/Boite%20%C3%A0%20moustache%20(r%C3%A9gion-r%C3%A9clamations).png)
