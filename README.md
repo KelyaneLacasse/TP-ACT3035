@@ -15,6 +15,7 @@ prouver qu'un certain profil est plus à risque à avoir des coûts médicaux pl
     getwd()
     setwd("C:/Users/marco/OneDrive/Bureau/travaux université/Trimestre 3/ACT3035")
     # lien pour trouver les données https://www.kaggle.com/datasets/mirichoi0218/insurance
+    # les données ont été, par la suite, télécharger et importer dans R
     
     install.packages("tidyverse")
     library(tidyverse)
