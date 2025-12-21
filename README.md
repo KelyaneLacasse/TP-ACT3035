@@ -239,6 +239,11 @@ Réclamation sur coûts médicaux à l'assurance vie
     # Par exemple, si la personne est fumeuse, sa prime d'assurance santé va couter beaucoup plus cher qu'une personne qui ne fumme pas puisque
     # le risque aux problèmes de santé reliés à être fumeur est très élevés, donc crée des coûts plus importantes.
 
+    # Dicussion des limites:
+    # Pour pouvoir encore mieux déterminer comment une prime d'assurance santé pourrait couter à une personne, il serait bien d'avoir
+    # d'autres variables dans les calculs comme la tension artérielle, antécédents familiaux sur des problèmes de santé, si la personne
+    # pratique un sport et lequel, car certains sprots (sport extrême) à des plus hauts risques de coûts élevés de frais médicaux.
+
     
 ├── docs/
 │   └── rapport.md           # Rapport final
