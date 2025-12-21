@@ -223,6 +223,8 @@ Réclamation sur coûts médicaux à l'assurance vie
     # Les interceptions ne sont pas très réalistes, car c'est un coût négatif.
     # Le risque de réclamations plus élevés avec l'âge et avoir des enfants est moins coûteuses avec le modèle glm.
     # Le risque de réclamations plus élevés avec l'âge et avoir des enfants est plus coûteuses avec le modèle lm.
+    # Le risque de réclamations plus élevés avec l'imc et être fumeur est moins coûteuses avec le modèle lm.
+    # Le risque de réclamations plus élevés avec l'imc et être fumeur est plus coûteuses avec le modèle glm.
     
 ├── docs/
 │   └── rapport.md           # Rapport final
