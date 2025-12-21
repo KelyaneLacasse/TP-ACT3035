@@ -235,6 +235,10 @@ Réclamation sur coûts médicaux à l'assurance vie
     # Cependant, l'âge aussi est une variable importante sur les réclamations faites à l'assurance vie sur les coûts médicaux et c'est avec le 
     # modèle de régression linéaire (lm) qui est la plus élevée, mais seulement d'environ 8$ donc par la faible différence celle du glm est aussi bonne.
 
+    # Avec le choix de ce modèle, on peut déterminer de combien environ le risque augmente au niveau des coûts pour l'assureur selon certaines données.
+    # Par exemple, si la personne est fumeuse, sa prime d'assurance santé va couter beaucoup plus cher qu'une personne qui ne fumme pas puisque
+    # le risque aux problèmes de santé reliés à être fumeur est très élevés, donc crée des coûts plus importantes.
+
     
 ├── docs/
 │   └── rapport.md           # Rapport final
