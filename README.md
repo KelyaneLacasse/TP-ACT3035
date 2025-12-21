@@ -225,6 +225,8 @@ Réclamation sur coûts médicaux à l'assurance vie
     # Le risque de réclamations plus élevés avec l'âge et avoir des enfants est plus coûteuses avec le modèle lm.
     # Le risque de réclamations plus élevés avec l'imc et être fumeur est moins coûteuses avec le modèle lm.
     # Le risque de réclamations plus élevés avec l'imc et être fumeur est plus coûteuses avec le modèle glm.
+    # Pour ces deux modèles, être fumeur est le risque le plus coûteux au niveau des coûts médicaux.
+    # De plus, selon les graphiques aussi on pouvait déterminer l'impact d'être fumeur et les réclamations faites à l'assurance vie.
     
 ├── docs/
 │   └── rapport.md           # Rapport final
