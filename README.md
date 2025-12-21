@@ -243,6 +243,9 @@ Code et analyse:
     # d'autres variables dans les calculs comme la tension artérielle, antécédents familiaux sur des problèmes de santé, si la personne
     # pratique un sport et lequel, car certains sprots (sport extrême) à des plus hauts risques de coûts élevés de frais médicaux.
 
+    # Tous les graphiques et tableau de résultats sont enregistrés dans la section fichier et ils sont biens identifiés.
+    #L'affichage de ceux-ci de fonctionne pas directement dans le readme.md
+
     
 ├── docs/
 │   └── rapport.md           # Rapport final
