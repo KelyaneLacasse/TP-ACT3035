@@ -72,14 +72,14 @@ Code et analyse:
 
     # boite à moustache
     ggplot(assurance, aes(x=fumeur, y=imc, fill=fumeur)) + geom_boxplot()
-    ![image alt](https://github.com/KelyaneLacasse/TP-ACT3035/blob/7eeacfc9629452ba66efaa17f04e425c6b2a4773/Boite%20%C3%A0%20moustache%20(fumeur-imc).png)
+![image alt](https://github.com/KelyaneLacasse/TP-ACT3035/blob/7eeacfc9629452ba66efaa17f04e425c6b2a4773/Boite%20%C3%A0%20moustache%20(fumeur-imc).png)
 
     ggplot(assurance, aes(x=fumeur, y=reclamation, fill=fumeur)) + geom_boxplot()
-    ![image alt](https://github.com/KelyaneLacasse/TP-ACT3035/blob/5a1bd1e56ab03be44dac5fc4720879eec36b031f/Boite%20%C3%A0%20moustache%20(fumeur-r%C3%A9clamation).png)
+![image alt](https://github.com/KelyaneLacasse/TP-ACT3035/blob/5a1bd1e56ab03be44dac5fc4720879eec36b031f/Boite%20%C3%A0%20moustache%20(fumeur-r%C3%A9clamation).png)
     # On peut remarquer que les fumeurs ont une tendance plus élevée à faire des réclamations élevées
     
     ggplot(assurance, aes(x=region, y=reclamation, fill=region)) + geom_boxplot()
-    ![image alt](https://github.com/KelyaneLacasse/TP-ACT3035/blob/318a78bed3c6abd186a8486ddfc569e33658c839/Boite%20%C3%A0%20moustache%20(r%C3%A9gion-r%C3%A9clamations).png)
+![image alt](https://github.com/KelyaneLacasse/TP-ACT3035/blob/318a78bed3c6abd186a8486ddfc569e33658c839/Boite%20%C3%A0%20moustache%20(r%C3%A9gion-r%C3%A9clamations).png)
     
     ggplot(assurance, aes(x=fumeur, y=age, fill=fumeur)) + geom_boxplot()
 
@@ -93,7 +93,7 @@ Code et analyse:
       labs(title="Relation âge-réclamation (échelle log)",
            x="Âge",
            y="Réclamation")
-    ![image alt](https://github.com/KelyaneLacasse/TP-ACT3035/blob/4330fe1353fdd1140ceced9fc44387dfd61b3a93/Relation%20%C3%A2ge-r%C3%A9clamation.png)
+![image alt](https://github.com/KelyaneLacasse/TP-ACT3035/blob/4330fe1353fdd1140ceced9fc44387dfd61b3a93/Relation%20%C3%A2ge-r%C3%A9clamation.png)
            
     assurance %>% 
       select(reclamation, imc) %>% 
@@ -104,7 +104,7 @@ Code et analyse:
       labs(title="Relation IMC-réclamation (échelle log)",
            x="IMC",
            y="Réclamation")
-    ![image alt](https://github.com/KelyaneLacasse/TP-ACT3035/blob/d150dd3b79670b68060d16e9467d399d32b48d94/Relation%20IMC-r%C3%A9clamation.png)
+![image alt](https://github.com/KelyaneLacasse/TP-ACT3035/blob/d150dd3b79670b68060d16e9467d399d32b48d94/Relation%20IMC-r%C3%A9clamation.png)
 
     #histogramme pour déterminer la fréquence des variables
     hist(assurance$reclamation)
@@ -120,7 +120,7 @@ Code et analyse:
       labs(title="Réclamation moyenne selon le nombre d'enfant",
            x=NULL,
            y="Réclamation moyenne")
-    ![image alt](https://github.com/KelyaneLacasse/TP-ACT3035/blob/1a1cfb982683501bbeb09768f36daa9f7ef7378a/R%C3%A9clamation%20moyenne%20selon%20nombre%20d'enfant.png)
+![image alt](https://github.com/KelyaneLacasse/TP-ACT3035/blob/1a1cfb982683501bbeb09768f36daa9f7ef7378a/R%C3%A9clamation%20moyenne%20selon%20nombre%20d'enfant.png)
 
     # Rajouter catégorie d'âge pour mieux déterminer la relation avec les réclamations
     # Rajouter la catégorie âge dans assurance
@@ -181,7 +181,7 @@ Code et analyse:
                          data = cbind(x_train,
                                       reclamation=y_train))
     summary(modelisation_glm)
-    ![image alt](https://github.com/KelyaneLacasse/TP-ACT3035/blob/6aba3b0842bd56300294668180d314d9274cf708/glm.png)
+![image alt](https://github.com/KelyaneLacasse/TP-ACT3035/blob/6aba3b0842bd56300294668180d314d9274cf708/glm.png)
     
     y_pred <- predict(modelisation_glm, newdata = x_test,
                       type = "response")
@@ -202,7 +202,7 @@ Code et analyse:
     modelisation_lm <- lm(reclamation ~ .,
                           data = assurance)
     summary(modelisation_lm)
-    ![image alt](https://github.com/KelyaneLacasse/TP-ACT3035/blob/77d25aa2189c36f5e56e04b90ebf024554523011/lm.png)
+![image alt](https://github.com/KelyaneLacasse/TP-ACT3035/blob/77d25aa2189c36f5e56e04b90ebf024554523011/lm.png)
 
     # Valeur significative selon ce modèle:
     # L'âge, car elle augmente de 242,73$ par an
@@ -242,6 +242,6 @@ Code et analyse:
     # pratique un sport et lequel, car certains sprots (sport extrême) à des plus hauts risques de coûts élevés de frais médicaux et même
     # savoir si la personne a des problèmes de santé diagnostiqués.
 
-    # Tous les graphiques et tableau de résultats sont enregistrés dans la section fichier et ils sont biens identifiés.
-    #L'affichage de ceux-ci de fonctionne pas directement dans le readme.md
+    # Tous les graphiques et tableau de résultats sont aussi enregistrés dans la section fichier et ils sont biens identifiés.
+
 
