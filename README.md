@@ -227,6 +227,11 @@ Réclamation sur coûts médicaux à l'assurance vie
     # Le risque de réclamations plus élevés avec l'imc et être fumeur est plus coûteuses avec le modèle glm.
     # Pour ces deux modèles, être fumeur est le risque le plus coûteux au niveau des coûts médicaux.
     # De plus, selon les graphiques aussi on pouvait déterminer l'impact d'être fumeur et les réclamations faites à l'assurance vie.
+
+    # Selon moi, la meilleure modélisation serait  avec le modèle linéaire généralisé (glm), car le coût d'être fumeur et d'avoir une forte imc est plus 
+    # élevée à comparer de l'autre. De plus, l'autre modèle (lm) détermine un plus haut risque en coût avec des enfants même si précédemment, on pouvait
+    # remarquer qu'avoir des enfants n'était pas nécessairement une variable qui augmentait le coût de réclamation à l'assurance.
+    # Selon moi avec les graphiques obtenus, il est plus important de prendre en compte si la personne fumme et son imc que d'avoir des enfants.
     
 ├── docs/
 │   └── rapport.md           # Rapport final
